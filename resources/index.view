@@ -1,0 +1,76 @@
+<svg viewport-fill="black">
+  
+  <!--
+  (As of SDK6)
+  fb-red: #FA4D61
+  fb-yellow: #F0A500
+  fb-blue: #4D86FF
+  -->
+  
+  <!-- Red -->
+  <arc x="50%-50" y="50%-50" width="100" height="100" fill="#62020d"
+    arc-width="10" start-angle="0" sweep-angle="360" />
+        
+  <!-- Yellow -->
+  <arc x="50%-60" y="50%-60" width="120" height="120" fill="#785200"
+    arc-width="10" start-angle="0" sweep-angle="360" />
+  
+  <!-- Blue -->
+  <arc x="50%-70" y="50%-70" width="140" height="140" fill="#002066"
+    arc-width="10" start-angle="0" sweep-angle="360" />
+  
+  
+  <!-- Stat Arcs -->
+  <arc id="hrArc" class="aodHide" x="50%-50" y="50%-50" width="100" height="100" fill="fb-red"
+    arc-width="10" start-angle="0" sweep-angle="0" />
+  
+  <arc id="azmArc" class="aodHide" x="50%-60" y="50%-60" width="120" height="120" fill="fb-yellow"
+    arc-width="10" start-angle="0" sweep-angle="0" />
+  
+  <arc id="stepsArc" class="aodHide" x="50%-70" y="50%-70" width="140" height="140" fill="fb-blue"
+    arc-width="10" start-angle="0" sweep-angle="360" />
+  
+  
+  <!-- Icons -->
+  <image id="stepsimg" class="aodHide" x="10%" y="5%" width="32" height="32" fill="fb-blue" 
+         href="steps_36px.png"/>
+  
+  <image id="azmimg" class="aodHide" x="80%" y="5%" width="32" height="32" fill="fb-yellow" 
+         href="azm_36px.png"/>
+  
+  <image id="hrimg" class="aodHide" x="10%" y="77%" width="32" height="32" fill="fb-red" 
+         href="hr_36px.png"/>
+  
+  
+  <!-- Labels -->
+  <text id="time" x="73%" y="85%" fill="white" text-anchor="middle" 
+        font-family="System-Bold" text-length="100" font-size="38"/>
+  
+  <text id="datetext" x="73%" y="92%" fill="white" text-anchor="middle" 
+        text-length="100" font-size="21"/>
+  
+  <text id="steps" class="aodHide" x="15%" y="20%" fill="fb-blue" text-anchor="middle" 
+        font-family="System-Bold" text-length="100" font-size="22"/>
+  
+  <text id="azm" class="aodHide" x="84%+1" y="20%" fill="fb-yellow" text-anchor="middle" 
+        font-family="System-Bold" text-length="100" font-size="22"/>
+  
+  <text id="hr" class="aodHide" x="15%-1" y="92%" fill="fb-red" text-anchor="middle" 
+        font-family="System-Bold" text-length="100" font-size="22"/>
+  
+  <!-- Analog Clock -->
+  <g id="mins" pointer-events="visible" transform="translate(50%,50%)">
+    <rect x="$-4" y="-110" rx="5" ry="5" width="8" height="111" fill="fb-light-gray" />
+  </g>
+  
+  <g id="hours" pointer-events="visible" transform="translate(50%,50%)">
+    <rect x="$-6" y="-75" rx="5" ry="5" width="12" height="77" fill="white" />
+  </g>
+  
+  <g id="secs" class="aodHide" pointer-events="visible" transform="translate(50%,50%)">
+    <rect x="$-2" y="-120" rx="5" ry="5" width="4" height="121" fill="red"/>
+  </g>
+  
+  <circle cx="50%" cy="50%" r="9" fill="#444444" />
+  
+</svg>

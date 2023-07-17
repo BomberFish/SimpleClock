@@ -1,0 +1,39 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~6.0.0"
+  },
+  "fitbit": {
+    "appUUID": "782a96a3-d588-483d-b355-b64d93c3d7fc",
+    "appType": "clockface",
+    "appDisplayName": "Simple Clock",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_activity",
+      "access_heart_rate",
+      "access_user_profile"
+    ],
+    "buildTargets": [
+      "atlas",
+      "vulcan"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "Simple Clock"
+      },
+      "fr-FR": {
+        "name": "Horloge Simple"
+      },
+      "ru-RU": {
+        "name": "простые часы"
+      },
+      "zh-CN": {
+        "name": "简单的手表"
+      },
+      "zh-TW": {
+        "name": "简单的手表"
+      }
+    },
+    "defaultLanguage": "en-US"
+  }
+}
